@@ -14,6 +14,9 @@ def categories():
     return render_template("categories.html", categories=categories)
 
 
+@app.route("/edit_category". method=["GET", "POST"])
+
+
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
     if request.method == "POST":
